@@ -1,7 +1,5 @@
 
----
-## Calculus, Cost Function, and Gradient Descent [Suggested Time: 25 min]
----
+# Calculus, Cost Function, and Gradient Descent
 
 ![best fit line](visuals/best_fit_line.png)
 
@@ -24,12 +22,12 @@ $$
 ### 1. What is a more generalized name for the RSS curve above? How is it related to machine learning models?
 
 
-```
+```python
 # Your answer here
 ```
 
 
-```
+```python
 # __SOLUTION__
 # The residual sum of squares curve above is a specific example of a cost curve. 
 # When training machine learning models, the goal is to minimize the cost curve.
@@ -38,12 +36,12 @@ $$
 ### 2. Would you rather choose a $m$ value of 0.08 or 0.05 from the RSS curve up above?   What is the relation between the position on the cost curve, the error, and the slope of the line?
 
 
-```
+```python
 # Your answer here
 ```
 
 
-```
+```python
 # __SOLUTION__
 # It would be better to have a value of 0.05 rather than 0.08 in the cost curve above. 
 # The reason for this is that the RSS is lower for the value of 0.05. 
@@ -56,12 +54,12 @@ $$
 ### 3. Using the gradient descent visual from above, explain why the distance between each step is getting smaller as more steps occur with gradient descent.
 
 
-```
+```python
 # Your answer here
 ```
 
 
-```
+```python
 # __SOLUTION__
 # The distance between the steps is getting smaller because the slope gradually 
 # becomes less and less steep as you get closer to finding the minimum.
@@ -70,12 +68,12 @@ $$
 ### 4. What is the purpose of a learning rate in gradient descent? Explain how a very small and a very large learning rate would affect the gradient descent.
 
 
-```
+```python
 # Your answer here
 ```
 
 
-```
+```python
 # __SOLUTION__
 # Learning rate is a number that is multiplied by each step that 
 # is taken during gradient descent. If the learning rate is smaller, the step sizes will become smaller. 
