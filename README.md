@@ -1,9 +1,10 @@
-
 # Calculus, Cost Function, and Gradient Descent
 
 ![best fit line](visuals/best_fit_line.png)
 
 The best fit line that goes through the scatterplot up above can be generalized in the following equation: $$y = mx + b$$
+
+
 
 Of all the possible lines, we can prove why that particular line was chosen using the plot down below:
 
@@ -26,7 +27,7 @@ $$
 # Your answer here
 ```
 
-### 2. Would you rather choose a $m$ value of 0.08 or 0.05 from the RSS curve up above?   What is the relation between the position on the cost curve, the error, and the slope of the line?
+### 2. Would you rather choose a $m$ value of 0.08 or 0.05 from the RSS curve up above?   What is the relation between the position on the cost curve, the error, and the slope `m` of the regression?
 
 
 ```python
