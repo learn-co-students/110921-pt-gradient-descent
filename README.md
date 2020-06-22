@@ -30,10 +30,18 @@ $$
 
 ```python
 # __SOLUTION__
-# The residual sum of squares curve above is a specific example of a cost curve. 
 
-# When training machine learning models, the goal is to minimize the cost curve.
+print(
+'''The residual sum of squares curve above is a specific example of a cost curve. 
+
+When training machine learning models, the goal is to minimize the cost curve.'''
+)
 ```
+
+    The residual sum of squares curve above is a specific example of a cost curve. 
+    
+    When training machine learning models, the goal is to minimize the cost curve.
+
 
 ### 2. Would you rather choose a $m$ value of 0.08 or 0.05 from the RSS curve up above?   What is the relation between the position on the cost curve, the error, and the slope `m` of the regression?
 
@@ -85,15 +93,24 @@ which gives us the best fit for this model
 # __SOLUTION__
 print('''
 The distance between the steps is getting smaller because the slope gradually 
-becomes less and less steep as you get closer to finding the minimum.
+becomes less and less steep as iterated points for "m" get closer to finding the 
+minimum RSS value.
 
 Subtracting the derivative - the slope at a given point - thus means subtracting
 a smaller and smaller value, which translates to smaller and smaller distances
 between iterated points on the cost curve.  
 ''')
-
-
 ```
+
+    
+    The distance between the steps is getting smaller because the slope gradually 
+    becomes less and less steep as iterated points for "m" get closer to finding the minimum.
+    
+    Subtracting the derivative - the slope at a given point - thus means subtracting
+    a smaller and smaller value, which translates to smaller and smaller distances
+    between iterated points on the cost curve.  
+    
+
 
 ### 4. What is the purpose of a learning rate in gradient descent? Explain how a very small and a very large learning rate would affect the gradient descent.
 
@@ -108,8 +125,29 @@ between iterated points on the cost curve.
 
 print('''
 Learning rate is a number that is multiplied by each step that 
-is taken during gradient descent. If the learning rate is smaller, the step sizes will become smaller. 
+is taken during gradient descent. 
+
+If the learning rate is smaller, the step sizes will become smaller. 
 If the learning rate is larger, the step sizes will be larger. 
-Learning rate is present in gradient descent to help ensure that an optimal minimum on the cost curve is discovered.
+
+Learning rate is present in gradient descent to help ensure that an 
+optimal minimum on the cost curve is discovered.
 ''')
+```
+
+    
+    Learning rate is a number that is multiplied by each step that 
+    is taken during gradient descent. 
+    
+    If the learning rate is smaller, the step sizes will become smaller. 
+    If the learning rate is larger, the step sizes will be larger. 
+    
+    Learning rate is present in gradient descent to help ensure that an 
+    optimal minimum on the cost curve is discovered.
+    
+
+
+
+```python
+
 ```
