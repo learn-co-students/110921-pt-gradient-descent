@@ -24,14 +24,103 @@ $$
 
 
 ```python
-# Your answer here
+### BEGIN SOLUTION
+
+
+from test_scripts.test_class import Test
+test = Test()
+
+
+print(
+'''The residual sum of squares curve above is a specific example of a cost curve. 
+
+When training machine learning models, the goal is to minimize the cost curve.'''
+)
+
+test.save()
+
+
+
+### END SOLUTION
+```
+
+    The residual sum of squares curve above is a specific example of a cost curve. 
+    
+    When training machine learning models, the goal is to minimize the cost curve.
+
+
+
+```python
+# PUT ALL WORK FOR THE ABOVE QUESTION ABOVE THIS CELL
+# THIS UNALTERABLE CELL CONTAINS HIDDEN TESTS
+
+### BEGIN HIDDEN TESTS
+
+from test_scripts.test_class import Test
+test = Test()
+
+test.run_test()
+
+
+### END HIDDEN TESTS
 ```
 
 ### 2. Would you rather choose a $m$ value of 0.08 or 0.05 from the RSS curve up above?   What is the relation between the position on the cost curve, the error, and the slope `m` of the regression?
 
 
 ```python
-# Your answer here
+### BEGIN SOLUTION
+
+
+from test_scripts.test_class import Test
+test = Test()
+
+print('''
+It would be better to have a value of 0.05 rather than 0.08 in the cost curve above. 
+The reason for this is that the RSS is lower for the value of 0.05. 
+
+As m changes values from 0.00 to 0.10, the Residual Sum of Squares is changing.
+
+The higher the value of the RSS, the worse the model is performing.
+
+So, the minimum RSS value which occurs ~ an m of .05 indicates it's that slope
+which gives us the best fit for this model
+''')
+
+test.save()
+
+
+
+### END SOLUTION
+```
+
+    
+    It would be better to have a value of 0.05 rather than 0.08 in the cost curve above. 
+    The reason for this is that the RSS is lower for the value of 0.05. 
+    
+    As m changes values from 0.00 to 0.10, the Residual Sum of Squares is changing.
+    
+    The higher the value of the RSS, the worse the model is performing.
+    
+    So, the minimum RSS value which occurs ~ an m of .05 indicates it's that slope
+    which gives us the best fit for this model
+    
+
+
+
+```python
+# PUT ALL WORK FOR THE ABOVE QUESTION ABOVE THIS CELL
+# THIS UNALTERABLE CELL CONTAINS HIDDEN TESTS
+
+### BEGIN HIDDEN TESTS
+
+from test_scripts.test_class import Test
+test = Test()
+
+test.run_test()
+
+
+### END HIDDEN TESTS
 ```
 
 ![](visuals/gd.png)
@@ -40,17 +129,108 @@ $$
 
 
 ```python
-# Your answer here
+### BEGIN SOLUTION
+
+
+from test_scripts.test_class import Test
+test = Test()
+
+print('''
+The distance between the steps is getting smaller because the slope gradually 
+becomes less and less steep as iterated points for "m" get closer to finding the 
+minimum RSS value.
+
+Subtracting the derivative - the slope at a given point - thus means subtracting
+a smaller and smaller value, which translates to smaller and smaller distances
+between iterated points on the cost curve.  
+''')
+
+test.save()
+
+
+
+### END SOLUTION
+```
+
+    
+    The distance between the steps is getting smaller because the slope gradually 
+    becomes less and less steep as iterated points for "m" get closer to finding the minimum.
+    
+    Subtracting the derivative - the slope at a given point - thus means subtracting
+    a smaller and smaller value, which translates to smaller and smaller distances
+    between iterated points on the cost curve.  
+    
+
+
+
+```python
+# PUT ALL WORK FOR THE ABOVE QUESTION ABOVE THIS CELL
+# THIS UNALTERABLE CELL CONTAINS HIDDEN TESTS
+
+### BEGIN HIDDEN TESTS
+
+from test_scripts.test_class import Test
+test = Test()
+
+test.run_test()
+
+
+### END HIDDEN TESTS
 ```
 
 ### 4. What is the purpose of a learning rate in gradient descent? Explain how a very small and a very large learning rate would affect the gradient descent.
 
 
 ```python
-# Your answer here
+### BEGIN SOLUTION
+
+
+from test_scripts.test_class import Test
+test = Test()
+
+
+print('''
+Learning rate is a number that is multiplied by each step that 
+is taken during gradient descent. 
+
+If the learning rate is smaller, the step sizes will become smaller. 
+If the learning rate is larger, the step sizes will be larger. 
+
+Learning rate is present in gradient descent to help ensure that an 
+optimal minimum on the cost curve is discovered.
+''')
+
+test.save()
+
+
+
+### END SOLUTION
 ```
+
+    
+    Learning rate is a number that is multiplied by each step that 
+    is taken during gradient descent. 
+    
+    If the learning rate is smaller, the step sizes will become smaller. 
+    If the learning rate is larger, the step sizes will be larger. 
+    
+    Learning rate is present in gradient descent to help ensure that an 
+    optimal minimum on the cost curve is discovered.
+    
+
 
 
 ```python
+# PUT ALL WORK FOR THE ABOVE QUESTION ABOVE THIS CELL
+# THIS UNALTERABLE CELL CONTAINS HIDDEN TESTS
 
+### BEGIN HIDDEN TESTS
+
+from test_scripts.test_class import Test
+test = Test()
+
+test.run_test()
+
+
+### END HIDDEN TESTS
 ```
